@@ -14,14 +14,24 @@
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 	<script src="https://kit.fontawesome.com/c75f30fc9e.js" crossorigin="anonymous"></script>
 	<style>
-	    /* NI SE LES OCURRA TOCAR ESTAS 2 LINEAS DE CODIGO */
-        img[src*="https://cdn.rawgit.com/000webhost/log"] { display: none; }
-        img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none; }
-        /* DE AQUI PARA ABAJO TOQUEN LO QUE NECESITEN MENOS LAS 2 LINEAS DE ARRIBA */
+        body{
+            cursor: url('imagenes/microfono2.png'), auto;
+        }
 	</style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioElement = document.querySelector('audio[src="audios/musica_fondo.mp3"]');
+            if (audioElement) {
+                audioElement.volume = 0.3; // Ajustar el volumen al 50%
+            }
+        });
+    </script>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+
+    <audio src="audios/musica_fondo.mp3" autoplay loop ></audio>
+
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
@@ -139,30 +149,7 @@
                     </a>
                 </div>
                 <div class="portfolio-container"> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Old</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>   
-                        </div>             
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Old</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>                         
-                    </div>
+                    
                     <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
                             <img src="imagenes/eventos/private/stripcar.jpeg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
@@ -174,20 +161,37 @@
                                 </div>
                             </div>    
                         </div>              
-                    </div> 
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <video width="100%" height="auto" controls>
+                                <source src="videos/trolley.mp4" type="video/mp4"> 
+                            </video>
+                        </div>                                                     
+                    </div>
+
                     <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
                             <img src="imagenes/eventos/private/wheela.jpeg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
                             <div class="content-holder">
-                                    <div class="portfolio-item">
-                                        <video  width="90%" height="auto" controls>
-                                            <source src="videos/wheela.mp4" type="video/mp4"> 
-                                        </video>
-                                    </div>                                                     
-            
+                                <a class="img-popup" href="imagenes/eventos/private/wheela.jpeg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">La Wheela</h6>
+                                    <p class="subtitle"></p>
+                                </div>
                             </div>    
                         </div>              
                     </div> 
+
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <video width="100%" height="auto" controls>
+                                <source src="videos/wheela.mp4" type="video/mp4"> 
+                            </video>
+                        </div>                                                     
+                    </div>
+
                     <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
                             <img src="imagenes/eventos/private/rookhouse.jpeg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
@@ -201,15 +205,6 @@
                         </div>              
                     </div> 
 
-
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <video width="100%" height="auto" controls>
-                                <source src="videos/wheela.mp4" type="video/mp4"> 
-                            </video>
-                        </div>                                                     
-                    </div>
-
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
                             <video width="100%" height="auto" controls>
@@ -218,36 +213,7 @@
                         </div>                                                     
                     </div>
 
-                    <div class="col-md-6 col-lg-4 advertising"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Old</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Old</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <iframe class="embed-responsive-item img-fluid" src="https://www.youtube.com/embed/4TM17hisjvY" allowfullscreen></iframe>       
 
-                        </div>                                                       
-                    </div> 
                     <div class="col-md-6 col-lg-4 advertising new"> 
                         <div class="portfolio-item">
                             <img src="imagenes/eventos/private/amocafe.jpeg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
@@ -259,68 +225,39 @@
                                 </div>
                             </div>
                         </div>
-                                
                     </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
+
+                    <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">School</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">School</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
+                            <video width="100%" height="auto" controls>
+                                <source src="videos/amocafe.mp4" type="video/mp4"> 
+                            </video>
                         </div>                                                     
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">School</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                    
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <iframe class="embed-responsive-item img-fluid" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>                    
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">School</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                      
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <iframe class="embed-responsive-item img-fluid" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>          
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">School</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                   
                     </div>
+
+                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        <div class="portfolio-item">
+                            <img src="imagenes/eventos/private/thecharcoaler.jpeg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <div class="content-holder">
+                                <a class="img-popup" href="imagenes/eventos/private/thecharcoaler.jpeg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">The Charcoaler</h6>
+                                    <p class="subtitle"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <video width="100%" height="auto" controls>
+                                <source src="videos/thecharcoaler.mp4" type="video/mp4"> 
+                            </video>
+                        </div>                                                     
+                    </div>
+
+
+            
                 </div> 
             </div>  
         </div>            
