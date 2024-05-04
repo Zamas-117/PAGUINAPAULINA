@@ -13,19 +13,12 @@
     <!-- Bootstrap + Pau main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 	<script src="https://kit.fontawesome.com/c75f30fc9e.js" crossorigin="anonymous"></script>
+    <script src="script/audio_control.js" crossorigin="anonymous"></script>
 	<style>
         body{
             cursor: url('imagenes/microfono2.png'), auto;
         }
 	</style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const audioElement = document.querySelector('audio[src="audios/musica_fondo.mp3"]');
-            if (audioElement) {
-                audioElement.volume = 0.3; // Ajustar el volumen al 50%
-            }
-        });
-    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
