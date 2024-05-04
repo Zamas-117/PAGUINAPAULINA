@@ -1,17 +1,3 @@
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
-</head>
-<body>
-    <div class="container mt-5">
-        <h1>holaa</h1> <!-- Incrustar PHP para mostrar texto dinámico -->
-        <p>holaa</p> <!-- Mostrar un valor dinámico -->
-
-    </div>
-</body>
-</html>
-
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
