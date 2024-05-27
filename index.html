@@ -19,15 +19,23 @@
         body{
             cursor: url('imagenes/microfono2.png'), auto;
         }
+        
         .header {
-            background-color: #333;
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
             background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpeg); !important
             background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpeg); !important
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #fff;
-            padding: 1em;
-            display: flex;
-            justify-content: space-between; /* Distribuye el espacio entre los elementos del header */
-            align-items: center; /* Centra verticalmente los elementos del header */
+        }
+        
+        .header .container {
+            position: relative;
+            height: 100%;
         }
 	</style>
 </head>
